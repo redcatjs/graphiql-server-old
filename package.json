@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "docker build --tag graphiql-server .",
+    "start": "docker run -p 5000:5000 graphiql-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redcatjs/graphiql-server.git"
+  },
+  "author": "Jo <jo@redcat.ninja> (https://redcat.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redcatjs/graphiql-server/issues"
+  },
+  "homepage": "https://github.com/redcatjs/graphiql-server#readme"
+}
