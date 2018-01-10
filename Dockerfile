@@ -10,11 +10,10 @@ WORKDIR /app
 
 RUN git clone https://gitlab.com/kachkaev/graphiql-workspace-app.git .
 
-RUN npm install
-
-RUN npm i graphiql-workspace@latest
+RUN npm install graphiql-workspace@latest subscriptions-transport-ws@latest
 
 COPY src/App.js src/App.js
+COPY src/GraphiQLSubscriptionsFetcher.js src/GraphiQLSubscriptionsFetcher.js
 
 RUN npm run build
 
